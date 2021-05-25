@@ -1,0 +1,68 @@
+.page-footer {
+    margin: 0;
+}
+
+.page-footer__block {
+    display: block;
+    width: 320px;
+    height: 65px;
+    background-color: #f2f2f2;
+
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+}
+
+.page-footer__logo:hover {
+    opacity: 0.8;
+}
+
+.page-footer__logo:active {
+    opacity: 0.6;
+}
+
+.page-footer__socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer__social-web:hover {
+    fill:#77bd4c;
+}
+
+.page-footer__social-web:active {
+    fill:#77bd4c;
+    opacity: 0.5;
+}
+
+.page-footer__academy-link {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.page-footer__academy-link:active {
+    opacity: 0.5;
+}
+
+.page-footer__academy-logo {
+    padding-left: 24px;
+    position: relative;
+}
+
+.page-footer__academy-logo svg {
+    position: absolute;
+    top: -6px;
+}
+
+.page-footer__academy-logo:hover {
+    fill: #77bd4c;
+}
+
+.page-footer__academy-logo:active {
+    fill: #77bd4c;
+    opacity: 0.5;
+}

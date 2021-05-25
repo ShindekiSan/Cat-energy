@@ -1,0 +1,65 @@
+.example {
+    background-color: #f2f2f2;
+    width: 320px;
+}
+
+.example__title {
+    font-size: 36px;
+    line-height: 60px;
+    font-family: OswaldRegular;
+}
+
+.example__description {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial;
+
+    width: 270px;
+}
+
+.example__table {
+    text-align: center;
+}
+
+.example__table tr {
+    margin-left: 30px;
+}
+
+.example__table__result-unit {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: OswaldRegular;
+    text-transform: uppercase;
+}
+
+.example__table__description-unit {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: Arial;
+}
+
+.example__cost {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: OswaldRegular;
+    text-transform: uppercase;
+}
+
+.example__switcher__status-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: OswaldRegular;
+    text-transform: uppercase;
+
+    border: none;
+    border-bottom: 1px dotted #000000;
+    background: none;
+}
+
+.example__switcher__status-button:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.example__switcher__status-button:active {
+    border: none;
+}

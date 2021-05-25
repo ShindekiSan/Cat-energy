@@ -1,0 +1,45 @@
+.about-site {
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+    background-size: 320px 305px;
+}
+
+.about-site__content {
+    width: 255px;
+
+    text-align: center;
+
+    padding-left: 25px;
+}
+
+.about-site__title {
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: OswaldRegular;
+
+    padding-top: 30px;
+}
+
+.about-site__slogan {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: OswaldRegular;
+}
+
+.about-site__product-preview {
+    margin-right: 5px;
+}
+
+.about-site__button {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: OswaldRegular;
+
+    padding-top: 10px;
+    margin-left: -5px;
+
+    height: 40px;
+}
