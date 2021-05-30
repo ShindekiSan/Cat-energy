@@ -1,0 +1,58 @@
+.program-info {
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid #ededed;
+    width: 320px;
+    height: 158px;
+}
+
+.program-info__list {
+    list-style: none;
+
+    padding: 0;
+}
+
+.program-info__label {
+    font-family: OswaldRegular;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    position: relative;
+    user-select: none;
+
+    padding-left: 45px;
+}
+
+.program-info__value:not(:checked)+label::before,
+.program-info__value:checked+label::before {
+    content: "";
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 2px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+}
+
+.program-info__value:checked+label::after {
+    content: "";
+
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 8px;
+    left: 11px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.program-info__value {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}

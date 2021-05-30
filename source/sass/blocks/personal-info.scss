@@ -1,0 +1,33 @@
+.personal-info {
+    width: 320px;
+    border: none;
+    border-top: 3px solid #68b738;
+}
+
+.personal-info__legend {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: OswaldRegular;
+
+    width: 190px;
+}
+
+.personal-info__label {
+    font-size: 16px;
+    font-family: OswaldRegular;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.personal-info__value {
+    color: #444444;
+    font-family: OswaldRegular;
+    font-size: 16px;
+    font-family: 18px;
+    text-transform: uppercase;
+    
+    padding-left: 15px;
+
+    border: 1px solid #e7e7e7;
+    height: 45px;
+}

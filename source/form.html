@@ -28,78 +28,80 @@
         </header>
         
         <main>
-            <h1>Функциональное питание для котов</h1>
-            <section>
-                <h2>Подбор программы</h2>
-                <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
-                <form method="POST" action="#">
-                    <fieldset>
-                        <div>
-                            <div>
-                                <label for="cat-name">Имя:</label>
-                                <input type="text" name="name" id="cat-name" placeholder="Барсик" required>
-                            </div>
-                            <div>
-                                <label for="cat-weight">Вес (кг):</label>
-                                <input type="text" name="weight" id="cat-weight" placeholder="7" required>
-                            </div>
-                            <div>
-                                <label for="cat-age">Возраст (лет):</label>
-                                <input type="text" name="age" id="cat-age" placeholder="7">
-                            </div>
+            <h1 class="visually-hidden">Функциональное питание для котов</h1>
+            <section class="form-section">
+                <h2 class="form-section__title">Подбор программы</h2>
+                <p class="form-section__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+                <form method="POST" action="#" class="form">
+                    <fieldset class="pet-info">
+                        <legend class="visually-hidden">Информация о питомцец</legend>
+                        <div class="pet-info__information-input">
+                            <label for="cat-name" class="pet-info__label">Имя:</label>
+                            <input type="text" name="name" id="cat-name" placeholder="Барсик" required class="pet-info__value">
                         </div>
-                        <ul>
-                            <li>
-                                <input type="radio" name="choice-purpose" id="choice-slimming" value="slimming">
-                                <label for="choice-slimming">Похудение</label>
+                        <div class="pet-info__information-input">
+                            <label for="cat-weight" class="pet-info__label">Вес (кг):</label>
+                            <input type="text" name="weight" id="cat-weight" placeholder="7" required class="pet-info__value">
+                        </div>
+                        <div class="pet-info__information-input">
+                            <label for="cat-age" class="pet-info__label">Возраст (лет):</label>
+                            <input type="text" name="age" id="cat-age" placeholder="7" class="pet-info__value">
+                        </div>
+                    </fieldset>
+                    <fieldset class="program-info">
+                        <legend class="visually-hidden">Цель покупки</legend>
+                        <ul class="program-info__list">
+                            <li class="program-info__unit">
+                                <input type="radio" name="choice-purpose" id="choice-slimming" value="slimming" class="program-info__value">
+                                <label for="choice-slimming" class="program-info__label">Похудение</label>
                             </li>
-                            <li>
-                                <input type="radio" name="choice-purpose" id="choice-weight-gain" value="weight-gain">
-                                <label for="choice-weight-gain">Набор массы</label>
+                            <li class="program-info__unit">
+                                <input type="radio" name="choice-purpose" id="choice-weight-gain" value="weight-gain" class="program-info__value">
+                                <label for="choice-weight-gain" class="program-info__label">Набор массы</label>
                             </li>
-                            <li>
-                                <input type="radio" name="choice-purpose" id="choice-advice" value="advice">
-                                <label for="choice-advice">Не знаю (нужен ваш совет)</label>
+                            <li class="program-info__unit">
+                                <input type="radio" name="choice-purpose" id="choice-advice" value="advice" class="program-info__value">
+                                <label for="choice-advice" class="program-info__label">Не знаю (нужен ваш совет)</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Контактные данные (владельца кота)</legend>
-                        <div>
-                            <label for="user-email">e-mail:</label>
-                            <input type="email" name="email" id="user-email" placeholder="kuklachev@gmail.com" required>
+                    <fieldset class="personal-info">
+                        <legend class="personal-info__legend">Контактные данные (владельца кота)</legend>
+                        <div class="personal-info__information-input">
+                            <label for="user-email" class="personal-info__label">e-mail:</label>
+                            <input type="email" name="email" id="user-email" placeholder="kuklachev@gmail.com" required class="personal-info__value">
                         </div>
                         <div>
-                            <label for="user-phone">Телефон:</label>
-                            <input type="tel" name="phone" id="user-phone" placeholder="8 (960) 900-60-90" required>
+                            <label for="user-phone" class="personal-info__label">Телефон:</label>
+                            <input type="tel" name="phone" id="user-phone" placeholder="8 (960) 900-60-90" required class="personal-info__value">
                         </div>
                     </fieldset>
-                    <fieldset>
-                        <legend>Комментарий</legend>
-                        <textarea name="text" id="user-text" placeholder="Расскажите обо всех повадках кота" ></textarea>
+                    <fieldset class="message">
+                        <legend class="message__legend">Комментарий</legend>
+                        <textarea name="text" id="user-text" placeholder="Расскажите обо всех повадках кота" class="message__value"></textarea>
                     </fieldset>
-                    <fieldset>
-                        <legend>Дополнительно</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="additional-sweetener" id="check1" value="sweetener">
-                                <label for="check1">Сахарозаменитель</label>
+                    <fieldset class="additional-products-selection">
+                        <legend class="additional-products-selection__legend">Дополнительно</legend>
+                        <ul class="additional-products-selection__list">
+                            <li class="additional-products-selection__unit">
+                                <input type="checkbox" name="additional-sweetener" id="check1" value="sweetener" class="additional-products-selection__value">
+                                <label for="check1" class="additional-products-selection__label">Сахарозаменитель</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="additional-water" id="check2" value="water">
-                                <label for="check2">Питьевая вода</label>
+                            <li class="additional-products-selection__unit">
+                                <input type="checkbox" name="additional-water" id="check2" value="water" class="additional-products-selection__value">
+                                <label for="check2" class="additional-products-selection__label">Питьевая вода</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="additional-milk" id="check3" value="milk">
-                                <label for="check3">Молоко</label>
+                            <li class="additional-products-selection__unit">
+                                <input type="checkbox" name="additional-milk" id="check3" value="milk" class="additional-products-selection__value">
+                                <label for="check3" class="additional-products-selection__label">Молоко</label>
                             </li>
-                            <li>
-                                <input type="checkbox" name="additional-vitamins" id="check4" value="vitamins">
-                                <label for="check4">Витамины</label>
+                            <li class="additional-products-selection__unit">
+                                <input type="checkbox" name="additional-vitamins" id="check4" value="vitamins" class="additional-products-selection__value">
+                                <label for="check4" class="additional-products-selection__label">Витамины</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <button type="submit">Отправить заявку</button>
+                    <button type="submit" class="form__submit-button button">Отправить заявку</button>
                 </form>
             </section>
 

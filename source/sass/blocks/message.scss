@@ -1,0 +1,30 @@
+.message {
+    width: 320px;
+    
+    border: none;
+    border-top: 3px solid #68b738;
+}
+
+.message__legend {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: OswaldRegular;
+}
+
+.message__value {
+    color: #444444;
+    font-family: OswaldRegular;
+    font-size: 16px;
+    font-family: 18px;
+    text-transform: uppercase;
+
+    padding-top: 15px;
+    padding-left: 16px;
+
+    width: 280px;
+    height: 150px;
+
+    border: 1px solid #e7e7e7;
+
+    resize: none;
+}

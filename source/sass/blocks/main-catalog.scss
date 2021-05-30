@@ -36,8 +36,11 @@
     text-transform: uppercase;
     font-family: OswaldRegular;
     padding-top: 10px;
-    margin-left: -5px;
+    margin-left: 20px;
     height: 40px;
+    &--additional-catalog {
+        margin-left: 0;
+    }
 }
 
 .more-products {
@@ -51,6 +54,21 @@
     margin-top: 10px;
 
     text-align: center;
+
+    position: relative;
+}
+
+.more-products::before {
+    content: "";
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 26px;
+    left: 145px;
+    background-image: url('../img/icon-plus-mobile.svg');
+
+    opacity: 0.2;
 }
 
 .more-products__title {
@@ -58,12 +76,19 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+
+    padding-top: 80px;
+    margin: 0;
 }
 
 .more-products__description {
     font-family: Arial;
     font-size: 12px;
     line-height: 16px;
+
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 25px;
 }
 
 .more-products__link {
@@ -73,7 +98,7 @@
     font-family: OswaldRegular;
 
     padding-top: 10px;
-    margin-left: -5px;
+    margin-left: 20px;
 
     height: 40px;
 }

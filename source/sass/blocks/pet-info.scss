@@ -1,0 +1,26 @@
+.pet-info {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pet-info__label {
+    font-family: OswaldRegular;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-right: 16px;
+}
+
+.pet-info__value {
+    color: #444444;
+    font-family: OswaldRegular;
+    font-size: 16px;
+    font-family: 18px;
+    text-transform: uppercase;
+    
+    padding-left: 15px;
+
+    border: 1px solid #e7e7e7;
+    height: 45px;
+}
