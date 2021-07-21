@@ -3,14 +3,25 @@
     padding: 0;
 
     border: 1px solid #ededed;
+    border-left: none;
+    border-right: none;
     width: 320px;
     height: 158px;
+    margin-top: 25px;
 }
 
 .program-info__list {
     list-style: none;
 
     padding: 0;
+
+    margin-top: 35px;
+}
+
+.program-info__unit {
+    display: block;
+
+    margin-top: 15px;
 }
 
 .program-info__label {
@@ -42,13 +53,19 @@
     content: "";
 
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     top: 8px;
     left: 11px;
     border: 1px solid green;
     background-color: green;
     border-radius: 50%;
+}
+
+.program-info__value:active+label::before,
+.program-info__value:active+label::after,
+.program-info__label:active {
+    opacity: 0.5;
 }
 
 .program-info__value {

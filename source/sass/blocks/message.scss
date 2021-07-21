@@ -1,14 +1,29 @@
 .message {
-    width: 320px;
-    
     border: none;
-    border-top: 3px solid #68b738;
+
+    margin: 0;
 }
 
 .message__legend {
     font-size: 24px;
     line-height: 24px;
     font-family: OswaldRegular;
+
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+    position: relative;
+}
+
+.message__legend::after {
+    content: '';
+
+    position: absolute;
+    width: 158px;
+    height: 3px;
+    top: 14px;
+    right: -180px;
+    background-color: #68b738;
 }
 
 .message__value {
@@ -18,10 +33,12 @@
     font-family: 18px;
     text-transform: uppercase;
 
+    padding: 0;
     padding-top: 15px;
-    padding-left: 16px;
+    padding-left: 13px;
+    padding-right: 4px;
 
-    width: 280px;
+    width: 260px;
     height: 150px;
 
     border: 1px solid #e7e7e7;

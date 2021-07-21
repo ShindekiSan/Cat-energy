@@ -2,13 +2,17 @@
     font-family: OswaldRegular;
     font-size: 36px;
     line-height: 60px;
+    margin-left: 20px;
 }
 
 .product {
     width: 320px;
     border-top: 1px solid #e6e6e6;
     margin-top: 10px;
-    align-items: center;
+}
+
+.product__card {
+    display: flex;
 }
 
 .product-info__title {
@@ -18,6 +22,9 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+
+    display: block;
+    width: 100px;
 }
 
 .product-info__table {
@@ -28,6 +35,9 @@
     font-family: Arial;
     font-size: 12px;
     line-height: 16px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-button {

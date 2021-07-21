@@ -1,5 +1,12 @@
+.address {
+    width: 320px;
+}
+
 .address__announcement {
-    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .address__title {
@@ -20,17 +27,15 @@
 }
 
 .address__map {
+    background-image: url('../img/bg-map-mobile@1x.png');
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 400px;
     position: relative;
 }
 
-.address__map::before {
-    content: "";
-
+.address__map-pin {
     position: absolute;
-    width: 124px;
-    height: 106px;
-    top: 125px;
-    left: 95px;
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
+    left: 134px;
+    top: 185px;
 }

@@ -15,13 +15,22 @@
     font-family: Arial;
     line-height: 18px;
 
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.product-features__feature-description {
     width: 200px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .product-features__image {
     background-color: #68b738;
     width: 60px;
     height: 60px;
+
     position: relative;
 }
 

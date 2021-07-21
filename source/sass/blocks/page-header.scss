@@ -1,9 +1,24 @@
+.page-header {
+    width: 320px;
+}
+
 .page-header__logo:hover {
     opacity: 0.8;
 }
 
 .page-header__logo:active {
     opacity: 0.6;
+}
+
+.page-header__buttons {
+    width: 280px;
+
+    margin-left: 20px;
+    margin-top: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
 }
 
 .main-menu__unit {
@@ -23,22 +38,16 @@
     border-right: none;
 }
 
-.main-nav__toggle-button {
-    position: relative;
-    display: block;
+.page-header__toggle-button {
+    width: 29px;
+    height: 22px;
 
-    border: none;
-    background-color: #ffffff;
-}
-
-.main-nav__toggle-button::before {
-    content: "";
-
-    position: absolute;
-    width: 24px;
-    height: 18px;
     background-image: url("../img/icon-mobile-menu.svg");
     background-repeat: no-repeat;
+    background-color: #ffffff;
+    border: none;
+
+    margin-top: 7px;
 }
 
 .main-menu {
@@ -50,14 +59,14 @@
     text-decoration: none;
 
     display: inline-block;
-    padding-top: 24px;
+    margin-top: 24px;
 }
 
-.main-menu__unit:hover {
+.main-menu__unit a:hover {
     opacity: 0.6;
 }
 
-.main-menu__unit:active {
+.main-menu__unit a:active {
     opacity: 0.3;
 }
 
@@ -65,3 +74,4 @@
     border-bottom: 2px solid #68b738;
     border-spacing: 2px;
 }
+

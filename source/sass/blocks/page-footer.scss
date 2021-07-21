@@ -1,16 +1,26 @@
 .page-footer {
     margin: 0;
+
+    width: 320px;
+
+    background-color: #f2f2f2;
 }
 
 .page-footer__block {
     display: block;
-    width: 320px;
+    width: 280px;
     height: 65px;
-    background-color: #f2f2f2;
+    margin-left: 20px;
 
     border: 1px solid #e6e6e6;
     border-left: none;
     border-right: none;
+}
+
+.page-footer__logo {
+    display: block;
+    margin-left: 75px;
+    margin-top: 22px;
 }
 
 .page-footer__logo:hover {
@@ -24,7 +34,12 @@
 .page-footer__socials {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 75px;
+    padding-top: 25px;
+    width: 130px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .page-footer__social-web:hover {
@@ -36,12 +51,23 @@
     opacity: 0.5;
 }
 
+.page-footer__academy-info {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    height: 45px;
+}
+
 .page-footer__academy-link {
     text-decoration: none;
     font-family: Arial;
     font-size: 14px;
     line-height: 14px;
     color: #000000;
+
+    display: block;
+    height: 16px;
 }
 
 .page-footer__academy-link:active {
@@ -49,13 +75,14 @@
 }
 
 .page-footer__academy-logo {
-    padding-left: 24px;
     position: relative;
+    padding-right: 23px;
+    height: 0px;
 }
 
 .page-footer__academy-logo svg {
     position: absolute;
-    top: -6px;
+    top: -10px;
 }
 
 .page-footer__academy-logo:hover {

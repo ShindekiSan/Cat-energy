@@ -1,7 +1,11 @@
 .pet-info {
     border: none;
     margin: 0;
-    padding: 0;
+}
+
+.pet-info__information-input {
+    display: flex;
+    justify-content: space-between;
 }
 
 .pet-info__label {
@@ -9,7 +13,9 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    padding-right: 16px;
+
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 .pet-info__value {
@@ -18,9 +24,11 @@
     font-size: 16px;
     font-family: 18px;
     text-transform: uppercase;
-    
-    padding-left: 15px;
+
+    margin-top: 15px;
+    padding-left: 10px;
 
     border: 1px solid #e7e7e7;
     height: 45px;
+    flex-grow: 1;
 }

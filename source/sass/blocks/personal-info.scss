@@ -1,7 +1,6 @@
 .personal-info {
-    width: 320px;
     border: none;
-    border-top: 3px solid #68b738;
+    margin: 0;
 }
 
 .personal-info__legend {
@@ -10,6 +9,27 @@
     font-family: OswaldRegular;
 
     width: 190px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    position: relative;
+}
+
+.personal-info__legend::after {
+    content: '';
+
+    position: absolute;
+    width: 99px;
+    height: 3px;
+    top: 13px;
+    right: -110px;
+    background-color: #68b738;
+}
+
+.personal-info__information-input {
+    display: flex;
+    justify-content: space-between;
 }
 
 .personal-info__label {
@@ -17,17 +37,46 @@
     font-family: OswaldRegular;
     line-height: 18px;
     text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-right: 10px;
+
+    position: relative;
 }
 
 .personal-info__value {
     color: #444444;
     font-family: OswaldRegular;
     font-size: 16px;
-    font-family: 18px;
+    line-height: 18px;
     text-transform: uppercase;
     
-    padding-left: 15px;
+    padding-left: 10px;
+    margin-top: 15px;
 
     border: 1px solid #e7e7e7;
     height: 45px;
+    flex-grow: 1;
 }
+
+.personal-info__email-value::before {
+    content: "";
+
+    position: absolute;
+    width: 17px;
+    height: 13px;
+    left: 245px;
+    top: 3px;
+    background-image: url("../img/icon-mail.svg");
+}
+
+.personal-info__tel-value::before{
+    content: "";
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 247px;
+    background-image: url("../img/icon-phone.svg");
+}
+

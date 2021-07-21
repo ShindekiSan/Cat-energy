@@ -9,9 +9,11 @@
     <body>
         <header class="page-header">
             <div class="page-header__content">
-                <a href="#" class="page-header__logo"><img src="img/logo-mobile.svg" alt="Логотип компании" width="191" height="37"></a>
+                <div class="page-header__buttons">
+                    <a href="#" class="page-header__logo"><img src="img/logo-mobile.svg" alt="Логотип компании" width="191" height="37"></a>
+                    <button class="page-header__toggle-button"><span class="visually-hidden">Закрыть меню</span></button>
+                </div>
                 <nav class="main-nav">
-                    <button class="main-nav__toggle-button"><span  class="visually-hidden">Закрыть меню</span></button>
                     <ul class="main-menu">
                         <li class="main-menu__unit">
                             <a href="index.html">Главная</a>
@@ -33,14 +35,14 @@
                 <h2 class="form-section__title">Подбор программы</h2>
                 <p class="form-section__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
                 <form method="POST" action="#" class="form">
-                    <fieldset class="pet-info">
+                    <fieldset class="pet-info container">
                         <legend class="visually-hidden">Информация о питомцец</legend>
                         <div class="pet-info__information-input">
-                            <label for="cat-name" class="pet-info__label">Имя:</label>
+                            <label for="cat-name" class="pet-info__label">Имя:*</label>
                             <input type="text" name="name" id="cat-name" placeholder="Барсик" required class="pet-info__value">
                         </div>
                         <div class="pet-info__information-input">
-                            <label for="cat-weight" class="pet-info__label">Вес (кг):</label>
+                            <label for="cat-weight" class="pet-info__label">Вес (кг):*</label>
                             <input type="text" name="weight" id="cat-weight" placeholder="7" required class="pet-info__value">
                         </div>
                         <div class="pet-info__information-input">
@@ -50,37 +52,39 @@
                     </fieldset>
                     <fieldset class="program-info">
                         <legend class="visually-hidden">Цель покупки</legend>
-                        <ul class="program-info__list">
-                            <li class="program-info__unit">
-                                <input type="radio" name="choice-purpose" id="choice-slimming" value="slimming" class="program-info__value">
-                                <label for="choice-slimming" class="program-info__label">Похудение</label>
-                            </li>
-                            <li class="program-info__unit">
-                                <input type="radio" name="choice-purpose" id="choice-weight-gain" value="weight-gain" class="program-info__value">
-                                <label for="choice-weight-gain" class="program-info__label">Набор массы</label>
-                            </li>
-                            <li class="program-info__unit">
-                                <input type="radio" name="choice-purpose" id="choice-advice" value="advice" class="program-info__value">
-                                <label for="choice-advice" class="program-info__label">Не знаю (нужен ваш совет)</label>
-                            </li>
-                        </ul>
+                        <div class="program-info__content container">
+                            <ul class="program-info__list">
+                                <li class="program-info__unit">
+                                    <input type="radio" name="choice-purpose" id="choice-slimming" value="slimming" class="program-info__value">
+                                    <label for="choice-slimming" class="program-info__label">Похудение</label>
+                                </li>
+                                <li class="program-info__unit">
+                                    <input type="radio" name="choice-purpose" id="choice-weight-gain" value="weight-gain" class="program-info__value">
+                                    <label for="choice-weight-gain" class="program-info__label">Набор массы</label>
+                                </li>
+                                <li class="program-info__unit">
+                                    <input type="radio" name="choice-purpose" id="choice-advice" value="advice" class="program-info__value">
+                                    <label for="choice-advice" class="program-info__label">Не знаю (нужен ваш совет)</label>
+                                </li>
+                            </ul>
+                        </div>
                     </fieldset>
-                    <fieldset class="personal-info">
+                    <fieldset class="personal-info container">
                         <legend class="personal-info__legend">Контактные данные (владельца кота)</legend>
                         <div class="personal-info__information-input">
-                            <label for="user-email" class="personal-info__label">e-mail:</label>
+                            <label for="user-email" class="personal-info__label personal-info__email-value">e-mail:*</label>
                             <input type="email" name="email" id="user-email" placeholder="kuklachev@gmail.com" required class="personal-info__value">
                         </div>
-                        <div>
-                            <label for="user-phone" class="personal-info__label">Телефон:</label>
+                        <div class="personal-info__information-input">
+                            <label for="user-phone" class="personal-info__label personal-info__tel-value">Телефон:*</label>
                             <input type="tel" name="phone" id="user-phone" placeholder="8 (960) 900-60-90" required class="personal-info__value">
                         </div>
                     </fieldset>
-                    <fieldset class="message">
+                    <fieldset class="message container">
                         <legend class="message__legend">Комментарий</legend>
                         <textarea name="text" id="user-text" placeholder="Расскажите обо всех повадках кота" class="message__value"></textarea>
                     </fieldset>
-                    <fieldset class="additional-products-selection">
+                    <fieldset class="additional-products-selection container">
                         <legend class="additional-products-selection__legend">Дополнительно</legend>
                         <ul class="additional-products-selection__list">
                             <li class="additional-products-selection__unit">
@@ -102,16 +106,17 @@
                         </ul>
                     </fieldset>
                     <button type="submit" class="form__submit-button button">Отправить заявку</button>
+                    <span class="form__prompt">* - Обязательные поля</span>
                 </form>
             </section>
 
             <section class="address">
-                <div class="address__announcement">
+                <div class="address__announcement container">
                     <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
                     <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </div>
                 <div class="address__map">
-                    <img class="address__map-image" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+                    <img class="address__map-pin" src="img/map-pin.png" alt="Отметка на карте" width="50" height="45">
                 </div>
             </section>
         </main>
@@ -154,10 +159,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="page-footer__block">
+            <div class="page-footer__block page-footer__academy-info">
                 <a href="#" class="page-footer__academy-link"><span>HTML Academy<span></span></a>
                 <a href="#" class="page-footer__academy-logo"><span class="visually-hidden">htmlacademy</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 60 60">
                         <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/><script xmlns=""/>
                     </svg>
                 </a>

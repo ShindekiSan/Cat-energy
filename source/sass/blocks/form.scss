@@ -2,7 +2,8 @@
     font-family: OswaldRegular;
     font-size: 36px;
     line-height: 60px;
-    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .form-section__description {
@@ -10,6 +11,16 @@
     font-size: 14px;
     font-family: 18px;
     text-transform: uppercase;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    width: 230px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border: 1px solid #000000;
 }
 
 .form__submit-button {
@@ -18,8 +29,19 @@
     text-transform: uppercase;
     font-family: OswaldRegular;
 
-    padding-top: 0px;
-    margin-left: -5px;
+    margin-left: 20px;
+    margin-top: 25px;
 
     height: 40px;
+}
+
+.form__prompt {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+
+    display: block;
+
+    margin-top: 25px;
+    margin-left: 82px;
 }
