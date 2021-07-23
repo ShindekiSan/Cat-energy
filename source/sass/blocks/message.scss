@@ -45,3 +45,36 @@
 
     resize: none;
 }
+
+@media (min-width: 768px) {
+    .message__legend {
+        font-size: 36px;
+        line-height: 36px;
+        
+        display: block;
+        width: 250px;
+        background-color: #ffffff;
+
+        padding-left: 30px;
+        margin-top: 72px;
+        margin-bottom: 76px;
+    }
+
+    .message__legend::after {
+        width: 768px;
+
+        left: -30px;
+        top: 22px;
+
+        z-index: -1;
+    }
+
+    .message__value {
+        width: 614px;
+        margin-left: 30px;
+        padding-left: 20px;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

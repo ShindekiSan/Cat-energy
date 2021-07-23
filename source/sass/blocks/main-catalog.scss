@@ -112,3 +112,140 @@
 
     height: 40px;
 }
+
+@media (min-width: 768px) {
+    .main-catalog__title {
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: normal;
+
+        margin-left: 30px;
+        margin-bottom: 122px;
+    }
+
+    .products-catalog {
+        padding: 0 30px;
+
+        width: 708px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product {
+        width: 324px;
+        height: 462px;
+        border: none;
+        background-color: #f2f2f2;
+
+        margin-bottom: 142px;
+
+        position: relative;
+    }
+
+    .product-info {
+        width: 250px;
+    }
+
+    .product-preview {
+        width: 324px;
+        position: absolute;
+
+        &--small {
+            top: -40px;
+        }
+        &--big {
+            top: -70px;
+        }
+        left: 0px;
+    }
+
+    .product-info__title {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+        width: 170px;
+        text-align: center;
+
+        padding-left: 48px;
+        margin-top: 165px;
+        margin-bottom: 30px;
+    }
+
+    .product-info__table {
+        width: 250px;
+        margin-left: 8px;
+    }
+
+    .product-info__table-unit {
+        font-size: 16px;
+        line-height: 16px;
+
+        border-bottom: 1px solid #cdcdcd;
+        
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .product-button {
+        width: 250px;
+
+        margin-left: 38px;
+        margin-top: 24px;
+
+        font-size: 16px;
+
+        &--additional-catalog {
+            width: 633px;
+            margin-left: 33px;
+            margin-right: 33px;
+        }
+    }
+
+    .more-products {
+        width: 324px;
+        height: 462px;
+
+        border: 1px solid #e6e6e6;
+    }
+
+    .more-products::before {
+        width: 60px;
+        height: 60px;
+        left: 132px;
+        top: 55px;
+    }
+
+    .more-products__text {
+        padding-top: 165px;
+    }
+
+    .more-products__title {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+
+        width: 160px;
+        
+        padding-top: 0;
+        padding-left: 82px;
+    }
+
+    .more-products__description {
+        font-size: 16px;
+
+        width: 170px;
+
+        padding-left: 77px;
+        padding-top: 30px;
+    }
+
+    .more-products__link {
+        font-size: 16px;
+        width: 250px;
+
+        margin-top: 87px;
+        margin-left: 38px;
+    }
+}

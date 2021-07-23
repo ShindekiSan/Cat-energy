@@ -2,6 +2,13 @@
     width: 320px;
 }
 
+.page-header__logo {
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    width: 191px; 
+    height: 37px;
+}
+
 .page-header__logo:hover {
     opacity: 0.8;
 }
@@ -75,3 +82,54 @@
     border-spacing: 2px;
 }
 
+@media (min-width: 768px) {
+    .page-header {
+        width: 708px;
+        padding: 0 30px;
+    }
+
+    .page-header__buttons {
+        margin-left: 0;
+        width: auto;
+        height: auto
+    }
+
+    .page-header__content {
+        display: flex;
+    }
+
+    .page-header__logo {
+        background-image: url("../img/logo-tablet.svg");
+        width: 173px;
+        height: 57px;
+    }
+
+    .page-header__toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-grow: 1;
+        margin-left: 95px;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .main-menu__unit {
+        font-size: 18px;
+        line-height: 24px;
+        
+        width: auto;
+        border: none;
+        height: auto;
+    }
+
+    .main-menu__unit a {
+        margin-top: 12px;
+    }
+}

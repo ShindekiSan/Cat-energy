@@ -27,7 +27,9 @@
 }
 
 .about-site__product-preview {
-    margin-right: 5px;
+    background-image: url("../img/index-can-mobile@1x.png");
+    width: 280px; 
+    height: 270px;
 }
 
 .about-site__button {
@@ -39,4 +41,51 @@
     padding-top: 10px;
 
     height: 40px;
+}
+
+@media (min-width: 768px) {
+    .about-site {
+        background-image: none;
+        margin-left: 90px;
+        height: 760px;  
+        position: relative;
+    }
+
+    .about-site__product-preview {
+        background-image: url("../img/index-can-tablet@1x.jpg");
+        background-size: 669px 609px;
+        position: absolute;
+        width: 649px;
+        height: 609px;
+        left: -30px;
+    }
+
+    .about-site__content {
+        width: 440px;
+
+        text-align: left;
+    }
+
+    .about-site__title {
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 60px;
+        color: #000000;
+
+        padding-top: 0;
+    }
+
+    .about-site__slogan {
+        color: #000000;
+    }
+
+    .about-site__button {
+        position: absolute;
+        margin-top: 30px;
+
+        width: 245px;
+        height: 50px;
+
+        padding-top: 15px;
+    }
 }

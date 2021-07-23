@@ -80,3 +80,43 @@
     background-image: url("../img/icon-phone.svg");
 }
 
+@media (min-width: 768px) {
+    .personal-info__legend {
+        font-size: 36px;
+        line-height: 36px;
+
+        width: 600px;
+        display: block;
+        background-color: #ffffff;
+
+        padding-left: 30px;
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+
+    .personal-info__legend::after {
+        width: 768px;
+        left: -30px;
+        top: 21px;
+
+        z-index: -1;
+    }
+
+    .personal-info__information-input {
+        width: 634px;
+        margin-left: 30px;
+    }
+
+    .personal-info__value {
+        padding-right: 0;
+    }
+
+    .personal-info__email-value::before {
+        left: 599px;
+    }
+
+    .personal-info__tel-value::before {
+        left: 600px;
+    }
+}
+

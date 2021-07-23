@@ -1,6 +1,4 @@
 .page-footer {
-    margin: 0;
-
     width: 320px;
 
     background-color: #f2f2f2;
@@ -10,7 +8,6 @@
     display: block;
     width: 280px;
     height: 65px;
-    margin-left: 20px;
 
     border: 1px solid #e6e6e6;
     border-left: none;
@@ -92,4 +89,41 @@
 .page-footer__academy-logo:active {
     fill: #77bd4c;
     opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .page-footer {
+        width: 768px;
+        height: 150px;
+
+        margin-top: -22px;
+    }
+
+    .page-footer__block {
+        border: none;
+
+        margin: 0;
+
+        width: auto;
+    }
+
+    .page-footer__content {
+        display: flex;
+        
+        justify-content: space-between;
+
+        padding-top: 60px;
+    }
+
+    .page-footer__logo {
+        margin-left: 0;
+    }
+
+    .page-footer__socials {
+        padding-left: 0;
+    }
+
+    .page-footer__academy-info {
+        width: 150px;
+    }
 }
